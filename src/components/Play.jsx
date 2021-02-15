@@ -11,9 +11,10 @@ class Play extends React.Component {
        player1: 'Player 1',
        player2: 'Player 2',
        winner1:'Player 1 Wins!!',
-       winner2: 'Player 2 Wins!!'
-      }
-       }
+       winner2: 'Player 2 Wins!!',
+       draw: 'Draw!!'
+    }
+  }
     
   
   
@@ -23,13 +24,6 @@ class Play extends React.Component {
       die2: '../images/dice' + (Math.floor(Math.random() * 6) + 1 ) + '.png',
     });
   }
-
-  winner = () => {
-    this.setState({
-      player1: 'Player 1 Wins!!'
-    });
-  }
-  
  
   render() {
       return (
